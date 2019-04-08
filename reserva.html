@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.png" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel Luar do Sertão</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="topo">
+        <h1 class="titulo">Hotel Luar do Sertão</h1>
+        <div id="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="hotel.html">O Hotel</a></li>
+                    <li><a href="quartos.html">Quartos</a></li>
+                    <li><a href="reserva.html">Solicitar Reserva</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="conteudo">
+        <h2 id="saudacao">Seja bem-vindo!</h2>
+        <p style="text-align: center; color: white">
+                Solicite sua reserva em nosso hotel por meio do formulário abaixo. Agradecemos a preferêcia!!! 
+        </p>
+        <div class="img">
+        <h3 style="text-align: center; color: white">Dados para reserva</h3>
+
+        <form id="form1" action="" method="GET">
+            Nome:<br><input type="text" name="nome" size="50%"><br><br>
+            CPF:<br><input type="text" name="cpf" size="35%"><br><br>
+            Email:<br><input type="email" name="email" size="40%"><br><br>
+            Telefone:<br><input type="tel" name="telefone" size="28%"><br><br>
+            <div id="dtaEntrada">
+                Data de entrada:<br><input type="date" name="dataEntrada"><br><br>
+            </div>
+            <div id="dtaSaida">
+               Data de saída:<br><input type="date" name="dataSaída"><br><br> 
+            </div>
+            <div id="qtdPessoas">
+            Quantidade de pessoas:<br>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br> 
+            </div>
+            Suite:<br>
+            <input type="checkbox" name="suite" value="luxo">Luxo<br>
+            <input type="checkbox" name="suite" value="luxo">Premium<br>
+            <input type="checkbox" name="suite" value="luxo">Presidencial<br>
+            <br>
+            <div id="formPagamento">
+                Formas de pagamento:<br>
+                <input type="radio" name="pagamento" value="credito">Crédito
+                <input type="radio" name="pagamento" value="debito">Débito
+                <input type="radio" name="pagamento" value="credito">Dinheiro
+                <img id="imgCards" src="img/formasPag.png">
+                <br><br>
+            </div>
+            <div id="buttons">
+                <input id="btEnviar" type="submit" value="Enviar" onclick="func1()">
+                <input id="btLimpar" type="reset" value="Limpar">
+            </div>
+        </form>
+        <br>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <span>
+            <a href="https://www.tripadvisor.com.br/Attractions-g2343660-Activities-Quixada_State_of_Ceara.html" title="TripAdvisor"><img id="iconsLink" src="img/tripAdvisor.Webp"/></a>
+        </span>
+        <span>
+            <a href="https://www.facebook.com/" title="Facebook"><img id="iconsLink" src="img/facebook.Webp"/></a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/" title="Instagram"><img id="iconsLink" src="img/instagram.Webp"/></a>
+        </span>
+        <br>By Tiago A. Fontenele <br>
+            Desenvolvimento de Software para Web (2019.1)
+    </footer>
+
+    <script>
+        function func1(){
+            alert("Dados enviados com sucesso")
+        }
+    
+    </script>
+    
+</body>
+</html>
